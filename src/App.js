@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Navigation from "./Navigation.js";
 import JoblyApi from './JoblyAPI.js';
 import jwt_decode from "jwt-decode";
+import background from "./images/20180613_201535.jpg";
 
 /**
  * Renders the base App component.
@@ -110,7 +111,7 @@ function App() {
    */
 
   function handleLogout() {
-    
+
     setToken(null);
   }
 
@@ -121,6 +122,7 @@ function App() {
   return (
     <userContext.Provider value={userInfo}>
       <div className="App">
+        {/* <img src={background} alt="background sunset"/> */}
         <BrowserRouter>
           <Navigation
             handleLogout={handleLogout}

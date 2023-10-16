@@ -20,7 +20,8 @@ function Homepage() {
             {
                 isLoggedIn
                 // TODO: make this a ternary? to display login/signup buttons again?
-                && <p>Welcome back {firstName}!</p>
+                ? <p>Welcome back {firstName}!</p>
+                : <p>Hint: Sign up with a username/password/email (you can use 'email@email.com') or sign in with: <br />username: username<br />password: password</p>
             }
         </div>
     )

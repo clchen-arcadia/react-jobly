@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# React Jobly
+
+A job board built in React.js and Express.js
+
+![React Jobly homepage](./src/images/jobly1.png "React Jobly")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

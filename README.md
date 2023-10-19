@@ -1,6 +1,6 @@
 # React Jobly
 
-A job board built in React.js and Express.js
+A job board built in React.js and Express.js. A frontend that connects with the backend: https://github.com/clchen-arcadia/express-jobly
 
 ![React Jobly homepage](./src/images/jobly1.png "React Jobly")
 

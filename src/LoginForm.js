@@ -41,7 +41,7 @@ function LoginForm({ onSubmit }) {
      *  within a try catch block, upon success, navigate home '/'
      *  If an error is thrown, catch it and display errors.
      */
-    
+
     async function handleSubmit(evt) {
         evt.preventDefault();
         try {
@@ -59,31 +59,35 @@ function LoginForm({ onSubmit }) {
     return (
         <div className='LoginForm'>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Username:
-                    <input
-                        type="text"
-                        value={formData.username}
-                        onChange={handleChange}
-                        name="username"
-                    />
-                </label>
+                <div>
+                    <label>
+                        Username:
+                        <input
+                            type="text"
+                            value={formData.username}
+                            onChange={handleChange}
+                            name="username"
+                        />
+                    </label>
+                </div>
 
-                <label>
-                    Password:
-                    <input
-                        type="password"
-                        value={formData.password}
-                        onChange={handleChange}
-                        name="password"
-                    />
-                </label>
+                <div>
+                    <label>
+                        Password:
+                        <input
+                            type="password"
+                            value={formData.password}
+                            onChange={handleChange}
+                            name="password"
+                        />
+                    </label>
+                </div>
 
                 <AlertMsg msgs={errors} />
                 <button>Login</button>
             </form>
         </div>
-    )
+    );
 }
 
 export default LoginForm;

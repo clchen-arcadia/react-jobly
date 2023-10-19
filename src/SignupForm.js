@@ -63,61 +63,71 @@ function SignupForm({ onSubmit }) {
     return (
         <div className='SignupForm'>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Username:
-                    <input
-                        type="text"
-                        value={formData.username}
-                        onChange={handleChange}
-                        name="username"
-                    />
-                </label>
+                <div>
+                    <label>
+                        Username:
+                        <input
+                            type="text"
+                            value={formData.username}
+                            onChange={handleChange}
+                            name="username"
+                        />
+                    </label>
+                </div>
 
-                <label>
-                    First name:
-                    <input
-                        type="text"
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        name="firstName"
-                    />
-                </label>
+                <div>
+                    <label>
+                        First name:
+                        <input
+                            type="text"
+                            value={formData.firstName}
+                            onChange={handleChange}
+                            name="firstName"
+                        />
+                    </label>
+                </div>
 
-                <label>
-                    Last name:
-                    <input
-                        type="text"
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        name="lastName"
-                    />
-                </label>
+                <div>
+                    <label>
+                        Last name:
+                        <input
+                            type="text"
+                            value={formData.lastName}
+                            onChange={handleChange}
+                            name="lastName"
+                        />
+                    </label>
+                </div>
+                
+                <div>
+                    <label>
+                        Email:
+                        <input
+                            type="text"
+                            value={formData.email}
+                            onChange={handleChange}
+                            name="email"
+                        />
+                    </label>
+                </div>
 
-                <label>
-                    Email:
-                    <input
-                        type="text"
-                        value={formData.email}
-                        onChange={handleChange}
-                        name="email"
-                    />
-                </label>
-
-                <label>
-                    Password:
-                    <input
-                        type="password"
-                        value={formData.password}
-                        onChange={handleChange}
-                        name="password"
-                    />
-                </label>
+                <div>
+                    <label>
+                        Password:
+                        <input
+                            type="password"
+                            value={formData.password}
+                            onChange={handleChange}
+                            name="password"
+                        />
+                    </label>
+                </div>
 
                 <AlertMsg msgs={errors} />
                 <button>Sign Up</button>
             </form>
         </div>
-    )
+    );
 }
 
 export default SignupForm;

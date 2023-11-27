@@ -21,8 +21,8 @@ import AlertMsg from './AlertMsg';
 
 function LoginForm({ onSubmit }) {
     const [formData, setFormData] = useState({
-        username: "",
-        password: ""
+        username: "username",
+        password: "password"
     });
     const [errors, setErrors] = useState([]);
     const navigate = useNavigate();
